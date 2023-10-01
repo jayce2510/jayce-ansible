@@ -64,9 +64,9 @@
     - name: Copy file with owner and permissions
       ansible.builtin.copy:
         src: ./script
-        dest: /home/ubuntu/script
-        owner: ubuntu
-        group: ubuntu
+        dest: /home/jayce/script
+        owner: jayce
+        group: jayce
 
     - name: SLEEP now !!!
       shell: sleep 15 && sudo docker exec -i khalid-mysql mysql --user=root --password=password123_DONG < script
