@@ -3,7 +3,7 @@ pipeline {
     agent{
         docker {
             image 'khaliddinh/ansible'
-            network 'host'
+            args '--network host'
         }
     }
     environment {
